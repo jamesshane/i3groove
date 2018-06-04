@@ -199,7 +199,7 @@ interval = 3
 ;   <bar-free>
 ;   <ramp-used>
 ;   <ramp-free>
-format = <label> <ramp-used>
+format = <label> <bar-used>
 
 ; Available tokens:
 ;   %percentage_used% (default)
