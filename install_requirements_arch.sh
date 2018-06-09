@@ -7,7 +7,7 @@
 sudo pacman -Syy
 
 #added binutils,gcc,make,pkg-config,fakeroot for compilations, removed yaourt
-sudo pacman -S git nitrogen rofi python-pip ttf-font-awesome adobe-source-code-pro-fonts binutils gcc make pkg-config fakeroot --noconfirm
+sudo pacman -S git nitrogen rofi python-pip ttf-font-awesome adobe-source-code-pro-fonts binutils gcc make pkg-config fakeroot pavucontrol --noconfirm
 
 #added PYTHONDONTWRITEBYTECODE to prevent __pycache__
 export PYTHONDONTWRITEBYTECODE=1
