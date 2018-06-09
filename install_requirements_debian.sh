@@ -10,6 +10,11 @@ else
 	sudo ln -s /usr/bin/env /bin/env
 fi
 
+#ugh
+
+sudo ln -s /sbin/reboot /usr/bin/reboot
+sudo ln -s /sbin/poweroff /usr/bin/poweroff
+
 #refresh apt
 sudo apt update
 
@@ -45,7 +50,7 @@ rm -fr i3-gaps
 
 
 #added binutils,gcc,make,pkg-config,fakeroot for compilations, removed yaourt
-sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev -y
+sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol -y
 
 #added PYTHONDONTWRITEBYTECODE to prevent __pycache__
 export PYTHONDONTWRITEBYTECODE=1
