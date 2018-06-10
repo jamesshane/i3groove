@@ -17,15 +17,15 @@ def prnt( arg, msg ):
 
     #print ("arg=",arg," msg=",msg)
     if arg == '-s':
-        print bcolors.OKGREEN + "[>] " + bcolors.ENDC + msg
+        print (bcolors.OKGREEN + "[>] " + bcolors.ENDC + msg)
         #print( prefix_success, msg)
     elif arg == '-f':
-        print bcolors.FAIL + "[x] " + bcolors.ENDC + msg
+        print (bcolors.FAIL + "[x] " + bcolors.ENDC + msg)
         #print( prefix_fail, msg)
     elif arg == '-n':
-        print bcolors.OKBLUE + "[>] " + bcolors.ENDC + msg
+        print (bcolors.OKBLUE + "[>] " + bcolors.ENDC + msg)
         #print( prefix_blue, msg, prefix_normal)
     else:
-        print bcolors.WARNING + "[!] " + bcolors.ENDC + msg
+        print (bcolors.WARNING + "[!] " + bcolors.ENDC + msg)
         #print( prefix_fatal, 'Wrong argument given in prnt() function!', prefix_normal)
         exit(9)
