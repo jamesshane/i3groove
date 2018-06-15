@@ -18,7 +18,7 @@ def replace_line(file, pattern, new_line):
                     #print (new_file.write( new_line+'\n' )=="None")
                     try:
                         new_file.write( new_line+'\n' )
-                        prnt.prnt( '-s', 'Success!')
+                        #prnt.prnt( '-s', 'Success!')
                     except:
                         prnt.prnt( '-n', 'Replacing line: \''+pl1+'\' with \''+pl2+'\'')
                         prnt.prnt( '-f', 'Failed!')
