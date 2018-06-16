@@ -37,7 +37,7 @@
         "foreground": "#c5c8c6",
         "modules-left": "i3",
         "modules-center": "date memory cpu filesystem",
-        "modules-right": "volume pulseaudio wlan eth powermenu",
+        "modules-right": "pulseaudio wlan eth powermenu",
         "label-unfocused-background": "#282a2e",
         "label-unfocused-foreground": "#c5c8c6",
         "label-mode-background": "#282a2e",

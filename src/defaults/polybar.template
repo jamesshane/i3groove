@@ -25,7 +25,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3
 modules-center = date memory cpu filesystem
-modules-right = volume pulseaudio wlan eth powermenu
+modules-right = pulseaudio wlan eth powermenu
 
 tray-position =
 ;tray-padding =
@@ -54,11 +54,11 @@ format-volume = <ramp-volume> <label-volume>
 ;   <label-muted> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-;format-muted = <label-muted>
+format-muted = <label-muted>
 
 ; Available tokens:
 ;   %percentage% (default)
-;label-volume = %percentage%%
+label-volume = VOL %percentage%% 
 
 ; Available tokens:
 ;   %percentage% (default)
@@ -199,7 +199,7 @@ interval = 3
 ;   <bar-free>
 ;   <ramp-used>
 ;   <ramp-free>
-format = <label> <bar-used>
+format = <label> <ramp-used>
 
 ; Available tokens:
 ;   %percentage_used% (default)
@@ -259,10 +259,10 @@ mapped = true
 
 format-volume = <label-volume> <bar-volume>
 label-volume = VOL
-label-volume-foreground = ${root.foreground}
+;label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
+;format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 15
@@ -280,7 +280,7 @@ bar-volume-fill = -
 bar-volume-fill-font = 1
 bar-volume-empty = -
 bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.foreground-alt}
+;bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/filesystem]
 type = internal/fs
