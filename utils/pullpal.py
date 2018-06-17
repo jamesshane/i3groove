@@ -23,7 +23,7 @@ for filename in glob.glob('../src/wallpapers/*'):
         hex_value = colorific.rgb_to_hex(palette.bgcolor.value)
         html.write("""
             <div style="background: {color}; width: 500px; height: 50px; color: white;">
-            {prominence} {color}
+            <span>BG:</span>{prominence} {color}
             </div>
         """.format(color=hex_value, prominence=palette.bgcolor.prominence))
         html.write("</div>")
