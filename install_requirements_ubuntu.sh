@@ -48,8 +48,11 @@ rm -fr i3-gaps
 sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol -y
 
 #added PYTHONDONTWRITEBYTECODE to prevent __pycache__
+#added pip3 installer
 export PYTHONDONTWRITEBYTECODE=1
+curl https://bootstrap.pypa.io/get-pip.py | sudo -H python3
 sudo -H pip install -r requirements.txt
+sudo -H pip3 install -r requirements.txt
 
 [ -d /usr/share/fonts/opentype ] || sudo mkdir /usr/share/fonts/opentype
 sudo git clone https://github.com/adobe-fonts/source-code-pro.git /usr/share/fonts/opentype/scp
@@ -122,11 +125,11 @@ sed -i -e "s/USER/$USER/g" config.yaml
 
 #backup
 mkdir $HOME/Backup
-python i3wm-themer.py --config config.yaml --backup $HOME/Backup
+./i3wm-themer.py --config config.yaml --backup $HOME/Backup
 
 #configure and set theme to default
 cp -r ../scripts/* /home/$USER/.config/polybar/
-python i3wm-themer.py --config config.yaml --install defaults/
+./i3wm-themer.py --config config.yaml --install defaults/
 
 echo ""
 echo "Read the README.md"

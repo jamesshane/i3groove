@@ -3,4 +3,4 @@
 
 cd src
 cp -r ../scripts/* /home/$USER/.config/polybar/
-python i3wm-themer.py --config config.yaml --install defaults/
+./i3wm-themer.py --config config.yaml --install defaults/
