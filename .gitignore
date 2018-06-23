@@ -1,2 +1,4 @@
 src/__pycache__
 src/*.pyc
+src/utils/*.jpg.html
+src/utils/*.jpg.pal
