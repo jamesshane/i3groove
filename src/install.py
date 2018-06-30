@@ -18,7 +18,7 @@ def install_file( config, install_file, new_file):
         prnt.prnt( '-f', 'Could not locate '+config[install_file]+' file!')
         return False
 
-def install_file_noconfig(old_file, new_file):
+def copy_file_noconfig(old_file, new_file):
     prnt.prnt( '-s', 'Located '+old_file+' file!')
     try:
         copyfile(old_file, new_file)

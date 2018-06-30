@@ -5,12 +5,14 @@
 import sys
 import argparse
 import yaml
+import json
 import os.path
 sys.path.append("..")
 import load_json as lj
 import config as conf
 import install
 import replace_theme as rt
+import msgfunc as prnt
 
 if __name__=="__main__":
 
@@ -22,17 +24,22 @@ if __name__=="__main__":
     configuration = {}
     configuration = conf.read_config( args.config)
     print (configuration['json-template'])
-    install.install_file_noconfig(configuration['json-template'],args.theme+".json")
+    install.copy_file_noconfig(configuration['json-template'],args.theme+".json")
     #print (args.config)
     #print (args.theme)
 
     jfile = lj.load_json(args.theme+".jpg.json")
     back=jfile['pal']['1']
-    #print (back)
+    prnt.prnt( '-n', 'Background is '+back)
     fore=jfile['pal']['2']
-    #print (fore)
+    prnt.prnt( '-n', 'Foreground is '+fore)
 
-    #jfile = lj.load_json(args.theme+".json")
-    rt.replace_theme(args.theme+".json",back,fore)
+    data = lj.load_json(args.theme+".json")
+    data=rt.replace_theme(data,back,fore,args.theme+".jpg")
+
+    jfile=json.dumps(data, indent=4)
+    with open(args.theme+".json", 'w') as outfile:
+        #json.dump(jfile, outfile)
+        outfile.write(jfile)
 
     exit(0)

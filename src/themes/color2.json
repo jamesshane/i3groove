@@ -33,32 +33,32 @@
         "client.placeholder": "#707880 #1d1f21 #707880 #5f819d #5f819d"
     },
     "comment": {
-        "back": "#222024",
-        "fore": "#250101"
+        "back": "#4f3f53",
+        "fore": "#292134"
     },
     "polybar": {
-        "background": "#222024",
-        "foreground": "#250101",
+        "background": "#4f3f53",
+        "foreground": "#292134",
         "modules-left": "i3",
         "modules-center": "date memory cpu filesystem",
         "modules-right": "pulseaudio wlan eth powermenu",
-        "label-unfocused-background": "#222024",
-        "label-unfocused-foreground": "#250101",
-        "label-mode-background": "#222024",
+        "label-unfocused-background": "#4f3f53",
+        "label-unfocused-foreground": "#292134",
+        "label-mode-background": "#4f3f53",
         "label-mode-foreground": "#FFFFFF",
         "label-focused-background": "#000000",
         "label-focused-foreground": "#FFFFFF",
-        "label-visible-background": "#222024",
+        "label-visible-background": "#4f3f53",
         "label-visible-foreground": "#FFFFFF",
-        "format-background": "#222024",
+        "format-background": "#4f3f53",
         "format-foreground": "#FFFFFF",
         "label-open-foreground": "#FFFFFF",
         "label-close-foreground": "#FFFFFF",
         "label-separator-foreground": "#FFFFFF",
-        "format-connected-background": "#222024",
-        "format-connected-foreground": "#250101",
+        "format-connected-background": "#4f3f53",
+        "format-connected-foreground": "#292134",
         "format-connected-prefix-foreground": "#FFFFFF",
         "ramp-signal-foreground": "#FFFFFF"
     },
-    "wallpaper": "city2.jpg"
+    "wallpaper": "color2.jpg"
 }

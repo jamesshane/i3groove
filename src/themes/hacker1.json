@@ -32,33 +32,33 @@
         "client.urgent": "#707880 #1d1f21 #707880 #5f819d #5f819d",
         "client.placeholder": "#707880 #1d1f21 #707880 #5f819d #5f819d"
     },
-    "comment":{
-      "back":"#cb8467",
-      "fore":"#8e2a22"
+    "comment": {
+        "back": "#141b25",
+        "fore": "#455461"
     },
     "polybar": {
-        "background": "#cb8467",
-        "foreground": "#8e2a22",
+        "background": "#141b25",
+        "foreground": "#455461",
         "modules-left": "i3",
         "modules-center": "date memory cpu filesystem",
         "modules-right": "pulseaudio wlan eth powermenu",
-        "label-unfocused-background": "#cb8467",
-        "label-unfocused-foreground": "#8e2a22",
-        "label-mode-background": "#cb8467",
+        "label-unfocused-background": "#141b25",
+        "label-unfocused-foreground": "#455461",
+        "label-mode-background": "#141b25",
         "label-mode-foreground": "#FFFFFF",
         "label-focused-background": "#000000",
         "label-focused-foreground": "#FFFFFF",
-        "label-visible-background": "#cb8467",
+        "label-visible-background": "#141b25",
         "label-visible-foreground": "#FFFFFF",
-        "format-background": "#cb8467",
+        "format-background": "#141b25",
         "format-foreground": "#FFFFFF",
         "label-open-foreground": "#FFFFFF",
         "label-close-foreground": "#FFFFFF",
         "label-separator-foreground": "#FFFFFF",
-        "format-connected-background": "#cb8467",
-        "format-connected-foreground": "#8e2a22",
+        "format-connected-background": "#141b25",
+        "format-connected-foreground": "#455461",
         "format-connected-prefix-foreground": "#FFFFFF",
         "ramp-signal-foreground": "#FFFFFF"
     },
-    "wallpaper": "amy3.jpg"
+    "wallpaper": "hacker1.jpg"
 }
