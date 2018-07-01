@@ -3,3 +3,4 @@ src/*.pyc
 src/utils/*.jpg.html
 src/utils/*.jpg.json
 src/utils/__pycache__
+src/utils/*.json
