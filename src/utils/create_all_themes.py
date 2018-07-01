@@ -5,6 +5,7 @@
 import colorific
 import glob
 import json
+from os import remove,system
 
 #html = open("index.html", "w")
 
@@ -42,6 +43,7 @@ for filename in glob.glob('../wallpapers/*'):
         cnt+=1
     html.write("</div>")
     html.close()
+    remove(c+'.html')
     data["pal"].update(done)
     print(data)
     jfile=json.dumps(data, indent=4)
@@ -49,3 +51,6 @@ for filename in glob.glob('../wallpapers/*'):
         #json.dump(jfile, outfile)
         outfile.write(jfile)
     outfile.close()
+    e,f=c.split('.')
+    system("./create_theme.py -c config.yaml -t "+e)
+    remove(c+'.json')
