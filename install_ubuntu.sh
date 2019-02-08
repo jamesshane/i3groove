@@ -45,7 +45,7 @@ rm -fr i3-gaps
 
 
 #added binutils,gcc,make,pkg-config,fakeroot for compilations, removed yaourt
-sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol -y
+sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol libxcb-composite0-dev -y
 
 #added PYTHONDONTWRITEBYTECODE to prevent __pycache__
 #added pip3 installer
