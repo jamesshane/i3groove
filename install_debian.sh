@@ -50,11 +50,11 @@ rm -fr i3-gaps
 
 
 #added binutils,gcc,make,pkg-config,fakeroot for compilations, removed yaourt
-sudo apt install git nitrogen rofi python-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol libxcb-composite0-dev -y
+sudo apt install git nitrogen rofi python3-pip binutils gcc make pkg-config fakeroot cmake python-xcbgen xcb-proto libxcb-ewmh-dev wireless-tools libiw-dev libasound2-dev libpulse-dev libcurl4-openssl-dev libmpdclient-dev pavucontrol libxcb-composite0-dev -y
 
 #added PYTHONDONTWRITEBYTECODE to prevent __pycache__
 export PYTHONDONTWRITEBYTECODE=1
-sudo -H pip install -r requirements.txt
+sudo -H pip3 install -r requirements.txt
 
 [ -d /usr/share/fonts/opentype ] || sudo mkdir /usr/share/fonts/opentype
 sudo git clone https://github.com/adobe-fonts/source-code-pro.git /usr/share/fonts/opentype/scp
@@ -124,6 +124,8 @@ cd src
 rm -f config.yaml
 cp defaults/config.yaml .
 sed -i -e "s/USER/$USER/g" config.yaml
+
+alias python=python3
 
 #backup
 mkdir $HOME/Backup
