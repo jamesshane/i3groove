@@ -204,8 +204,8 @@ format = <label> <ramp-used>
 ; Available tokens:
 ;   %percentage_used% (default)
 ;   %percentage_free%
-   %gb_used%
-   %gb_free%
+;   %gb_used%
+;   %gb_free%
 ;   %gb_total%
 ;   %mb_used%
 ;   %mb_free%
